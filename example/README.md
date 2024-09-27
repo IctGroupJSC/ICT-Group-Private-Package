@@ -1,16 +1,25 @@
-# example
+# Эхний хувилбарт аватарын component багтсан болно.
 
-A new Flutter project.
+ICT Group -ын дотоод систем хөгжүүлэлтэндээ ашиглах package
 
-## Getting Started
+![APP_ICON](./APP_ICON.png)
 
-This project is a starting point for a Flutter application.
+## Avatar Parameters
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+| Parameter              | Description                                           | Type                 | Default                     |
+| :--------------------- | :---------------------------------------------------- | :------------------- | :-------------------------- |
+| `name`                 | Used for creating initials. (Regex split by r'\s+\/') | _String_             |                             |
+| `size`                 | Avatar size (width = height).                         | _double_             | 80.0                        |
+| `image`                | Avatar image source exclusively with [child].         | _ImageProvider_      |                             |
+| `margin`               | Avatar margin.                                        | _EdgeInsetsGeometry_ |                             |
+| `style`                | Initials text style.                                  | _TextStyle_          |                             |
+| `statusColor`          | Status color.                                         | _Color_              |                             |
+| `statusSize`           | Status size.                                          | _double_             | 12.0                        |
+| `statusAlignment`      | Status alignment.                                     | _Alignment_          | Alignment.topRight          |
+| `decoration`           | Avatar decoration.                                    | _BoxDecoration_      | color, shape                |
+| `foregroundDecoration` | Avatar foreground decoration.                         | _BoxDecoration_      |                             |
+| `child`                | Child widget exclusively with [image].                | _Widget_             |                             |
+| `children`             | Hosted widgets.                                       | _Widget_             |                             |
+| `animated`             | Use AnimatedContainer                                 | _bool_               | false                       |
+| `duration`             | AnimatedContainer duration                            | _Duration_           | Duration(milliseconds: 300) |
+| `autoTextSize`         | Auto name text size                                   | _bool_               | false                       |
